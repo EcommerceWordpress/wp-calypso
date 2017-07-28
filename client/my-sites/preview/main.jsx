@@ -119,6 +119,11 @@ class PreviewMain extends React.Component {
 					showClose={ false }
 					previewUrl={ this.state.previewUrl }
 					externalUrl={ this.state.externalUrl }
+					loadingMessage={
+						this.props.translate( '{{strong}}One moment please…{{/strong}} loading your site.',
+							{ components: { strong: <strong /> } }
+						)
+					}
 				/>
 			</Main>
 		);
